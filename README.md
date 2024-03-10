@@ -13,6 +13,8 @@
 - [2. Interfaces e tipos](#2-interfaces-e-tipos)
 - [2. 1. JSX.Element](#21-jsxelement)
 - [3. Eventos](#3-eventos)
+- [3.1. EventHandler](#31-eventhandler)
+- [3.1.1 Função Anônima](#311-função-anônima)
 
 ### 1. Props
 É preciso anotar as props que um componente recebe.
