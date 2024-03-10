@@ -8,12 +8,7 @@ const Checkbox = ({ label }: { label: string }) => {
   };
 
   return (
-    <label
-      style={{
-        padding: '1rem',
-        border: value ? '2px solid #8D2' : '2px solid #F70',
-      }}
-    >
+    <label>
       <input type="checkbox" checked={value} onChange={handleChange} />
       {label}
     </label>

@@ -72,7 +72,8 @@ __OBS:__: O VS Code é o seu aliado, use as tooltips dele para identificar os ti
 
 #### 3.1. EventHandler
 É possível definir o elemento em que o EventHandler será usado. Assim o currentTarget será definido corretamente.
-![alt text](image-14.png)
+![alt text](image-17.png)
+__OBS:__ passandoo o mouse em cima do onChange eu já consigo ver que ele é do tipo ![alt text](image-16.png)
 
 #### 3.1.1 Função Anônima
 Se definirmos uma função anônima diretamente no evento, o TypeScript conseguirá inferir o tipo de evento e o elemento do mesmo.
