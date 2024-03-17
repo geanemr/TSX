@@ -2,9 +2,12 @@ import React from "react";
 import Input from "./Input";
 import Button2 from "./Button2";
 import Checkbox from "./Checkbox";
+import Button from "./Button-useState";
+
 function App() {
   const [date, setDate] = React.useState("");
   const [total, setTotal] = React.useState(0);
+  const [number, setNumber] = React.useState(0);
 
   return (
     <>
@@ -22,6 +25,8 @@ function App() {
       <p>Total: {total}</p>
       <Button2 total={total} setTotal={setTotal} />
       <Checkbox label="Termos e condições"/>
+      <p>{number}</p>
+      <Button aumentar={setNumber} />
     </>
   );
 }
