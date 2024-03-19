@@ -3,6 +3,8 @@ import Input from "./Input";
 import Button2 from "./Button2";
 import Checkbox from "./Checkbox";
 import Button from "./Button-useState";
+import Fetch from "./fetchExercise";
+import Ref from "./useRef";
 
 function App() {
   const [date, setDate] = React.useState("");
@@ -27,6 +29,8 @@ function App() {
       <Checkbox label="Termos e condições"/>
       <p>{number}</p>
       <Button aumentar={setNumber} />
+      <Fetch />
+      <Ref />
     </>
   );
 }

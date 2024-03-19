@@ -8,8 +8,8 @@ type InputProps = React.ComponentProps<"input"> & {
 const Input = ({ label, id, ...props }: InputProps) => {
   return (
     <div>
-      <label htmlFor={id}>{label}</label>
-      <input type="text" name={id} id={id} {...props} />
+      <label htmlFor={label}>{label}</label>
+      <input type="text" name={label} id={label} {...props} />
     </div>
   );
 };

@@ -16,7 +16,11 @@
 - [3.1. EventHandler](#31-eventhandler)
 - [3.1.1 Função Anônima](#311-função-anônima)
 - [4. Hooks TSX](#4-hooks-tsx)
-- [4. useState](#41-usestate)
+- [4.1. useState](#41-usestate)
+- [4.1.1 React.Dispatch](#411-reactdispatch)
+- [4.2. useEffect](#42-useeffect)
+- [4.3. useRef](#43-useref)
+
 ### 1. Props
 É preciso anotar as props que um componente recebe.
 
@@ -102,7 +106,7 @@ Generics para definir os possíveis tipos: useState<null | User>(null).
 
 ![alt text](src/Images/image-18.png)
 
-### 4.2. React.Dispatch
+#### 4.1.1. React.Dispatch
 React.Dispatch<React.SetStateAction< tipo>> é o tipo da função que modifica o estado do hook useState.
 
 Componente Button:
@@ -110,3 +114,13 @@ Componente Button:
 
 Onde estou chamando o componente:
 ![alt text](src/Images/image-20.png)
+
+#### 4.2. useEffect
+Não precisamos anotar nenhum tipo especial no useEffect, ele é um hook que recebe uma função (função ativada no efeito) que retorna uma função (função ativada quando o componente é "desmontado").
+
+![alt text](src/Images/image-21.png)
+
+#### 4.3 useRef
+Devemos definir o tipo de elemento do useRef< Elemento >, quando utilizamos o mesmo para manipularmos objetos.
+
+![alt text](src/Images/image-22.png)
