@@ -5,6 +5,7 @@ import Checkbox from "./Checkbox";
 import Button from "./Button-useState";
 import Fetch from "./fetchExercise";
 import Ref from "./useRef";
+import Volume from "./volume";
 
 function App() {
   const [date, setDate] = React.useState("");
@@ -30,7 +31,8 @@ function App() {
       <p>{number}</p>
       <Button aumentar={setNumber} />
       <Fetch />
-      <Ref />
+      {/* <Ref /> */}
+      <Volume />
     </>
   );
 }

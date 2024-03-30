@@ -20,6 +20,7 @@
 - [4.1.1 React.Dispatch](#411-reactdispatch)
 - [4.2. useEffect](#42-useeffect)
 - [4.3. useRef](#43-useref)
+- [4.4. useRef](#44-custom-hook)
 
 ### 1. Props
 É preciso anotar as props que um componente recebe.
@@ -120,7 +121,18 @@ Não precisamos anotar nenhum tipo especial no useEffect, ele é um hook que rec
 
 ![alt text](src/Images/image-21.png)
 
-#### 4.3 useRef
+#### 4.3. useRef
 Devemos definir o tipo de elemento do useRef< Elemento >, quando utilizamos o mesmo para manipularmos objetos.
 
 ![alt text](src/Images/image-22.png)
+
+#### 4.4. Custom Hook
+Devemos anotar os seus parâmetros e o retorno.
+Ex: useLocalStorage
+
+![alt text](src/Images/image-24.png)
+
+![alt text](src/Images/image-23.png)
+_também pode ser resolvido colocando **return [state, setstate] as const**_
+
+![alt text](src/Images/image-25.png)
