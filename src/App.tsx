@@ -6,6 +6,7 @@ import Button from "./Button-useState";
 import Fetch from "./fetchExercise";
 import Ref from "./useRef";
 import Volume from "./volume";
+import Produto from "./Produto";
 
 function App() {
   const [date, setDate] = React.useState("");
@@ -33,6 +34,7 @@ function App() {
       <Fetch />
       {/* <Ref /> */}
       <Volume />
+      <Produto />
     </>
   );
 }
