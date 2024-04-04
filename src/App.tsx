@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div>Início da Viagem: {date}</div>
+      {/* <div>Início da Viagem: {date}</div>
       <Input label="email" id="Email" type="email" />
       <Input label="nome" id="Nome" />
       <Input
@@ -31,9 +31,9 @@ function App() {
       <Checkbox label="Termos e condições"/>
       <p>{number}</p>
       <Button aumentar={setNumber} />
-      <Fetch />
+      <Fetch /> */}
       {/* <Ref /> */}
-      <Volume />
+      {/* <Volume /> */}
       <Produto />
     </>
   );
