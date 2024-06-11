@@ -20,7 +20,8 @@
 - [4.1.1 React.Dispatch](#411-reactdispatch)
 - [4.2. useEffect](#42-useeffect)
 - [4.3. useRef](#43-useref)
-- [4.4. useRef](#44-custom-hook)
+- [4.4. Custom Hook](#44-custom-hook)
+- [4.5. useContext](#45-usecontext)
 
 ### 1. Props
 É preciso anotar as props que um componente recebe.
@@ -136,3 +137,10 @@ Ex: useLocalStorage
 _também pode ser resolvido colocando **return [state, setstate] as const**_
 
 ![alt text](src/Images/image-25.png)
+
+#### 4.5. useContext
+Defina a interface do contexto e passe ela no genérico do createContext
+Ex:  
+React.createContext<IUiContext | null>(null)
+
+![alt text](src/Images/image-26.png)
