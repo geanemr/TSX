@@ -1,12 +1,15 @@
 import React from "react";
-import Input from "./Input";
-import Button2 from "./Button2";
-import Checkbox from "./Checkbox";
-import Button from "./Button-useState";
-import Fetch from "./fetchExercise";
-import Ref from "./useRef";
-import Volume from "./volume";
+// import Input from "./Input";
+// import Button2 from "./Button2";
+// import Checkbox from "./Checkbox";
+// import Button from "./Button-useState";
+// import Fetch from "./fetchExercise";
+// import Ref from "./useRef";
+// import Volume from "./volume";
 import Produto from "./Produto";
+import { UiContextProvider } from "./UiContext";
+import Header from "./Header";
+import Content from "./Content";
 
 function App() {
   const [date, setDate] = React.useState("");
@@ -35,6 +38,7 @@ function App() {
       {/* <Ref /> */}
       {/* <Volume /> */}
       <Produto />
+      <UiContextProvider><Header/><Content /></UiContextProvider>
     </>
   );
 }
